@@ -20,10 +20,10 @@ body {
 .hero {
     display: grid;
     width: 100%;
-    
     grid-template-columns: repeat(4, 1fr);
-    gap: 1.5em;
+    gap: 0.5em;
     margin: 0 250px;
+    align-items: center;
 }
 
 .grid__item--1 {
@@ -32,15 +32,15 @@ body {
     grid-row-start: 1;
     grid-row-end: 3;
     background-color: #1D1F49;
+    height: 93.5%;
+    border-radius: 10px;
 
 }
 
-.time_interval {
-   
-  text-decoration: none;
-  text-align: left;
-
-    
+.grid__main-png {
+    width: 50px;
+    border: solid #ffffff;
+    border-radius: 29px;
 }
 
 .smooth-blue {
@@ -64,36 +64,98 @@ body {
     background-color: #f1c65b;
 }
 
+.topic_icon_svg {
+    color: #0000ff;
+}
 
 .grid__item--2 {
-    height: 75%;
+    height: 60%;
     border-radius: 10px;
+    padding: 1em;
 }
 
 .grid__item--3 {
-   
+    padding: 1em;
     height: 25%;
     background-color: #1D1F49;
     border-radius: 10px;
 }
 
 
+.grid__item--svg {
+    position: relative;
+    width: 65px;
+    margin-left: 6em;
+}
+
 .grid__item {
     height: 200px;
-    border-radius: 12px
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #1D1F49;
+    margin: 1em;
+}
+
+.grid__item:hover::after {
+    background-color: rgb(255, 255, 255);
+    z-index: 0;
+}
+
+.grid__item--bottom-container:hover::before {
+    background-color: #f5f0f0;
+    z-index: 0;
+}
+
+.grid__item--top-container::before {
+    background-color: #f5f0f0;
+    z-index: 0;
+}
+
+.grid__item--ellipsis {
+    height: 3px;
+    width: 10px;
+    cursor: pointer;
 }
 
 .grid__item--top-container {
-    height: 20%;
+    height: 25%;
+    border-radius: 10px;
     overflow: hidden;
-    margin-top: -10px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+
 }
 
 .grid__item--bottom-container {
-    
     height: 80%;
     background-color: #1D1F49;
     border-radius: 10px;
+    padding: 1em;
     
 }
 
+.grid__item--bottom-1 {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    
+}
+
+.grid__item--bottom-name {
+    margin-top: -3%;
+    top: 10%;
+}
+
+
+.grid__item--bottom-2 {
+    position: relative;
+    font-size: 14px;
+    margin-bottom: 100%;
+    
+}
+
+.grid__item--last {
+    font-size: 10px;
+    margin-bottom: 100%;
+}
