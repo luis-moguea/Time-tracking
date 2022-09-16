@@ -74,9 +74,11 @@ const renderCards = () => {
         <div class="grid__item--1">
             <div class="grid__item--2 ${el.color}">
                 <img class="grid__main-png" src="${el.main_svg}">
-                <p>${el.words_before}</p>
-                <h1>${el.name}</h1>
-            </div>
+                    <div class="grid__item--4">  
+                        <p class="grid__item--4-1">${el.words_before}</p>
+                        <h1 class="grid__item--4-2">${el.name}</h1>
+                    </div>
+                </div>    
             <div class="grid__item--3">
                 <p class="interval__list>Daily</p>
                 <p class="interval__list>Weekly</p>
@@ -99,7 +101,7 @@ const renderCards = () => {
                     <img class="grid__item--ellipsis" src=${el.ellipis_svg}>
                 </div>
                 <div "grid__item--bottom-2">
-                    <h1>${el.time_hours}</h1>
+                    <h1 class="grid__item--hrs">${el.time_hours}</h1>
                     <p class="grid__item--last">${el.last_session_hours}</p>
                 </div>
             </div>
