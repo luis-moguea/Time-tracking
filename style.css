@@ -75,10 +75,18 @@ body {
 }
 
 .grid__item--3 {
+    display: block;
     padding: 1em;
     height: 25%;
     background-color: #1D1F49;
     border-radius: 10px;
+    color: #ffffff;
+    
+}
+
+.interval__list {
+    display: block;
+    color: #ffffff;
 }
 
 
@@ -169,8 +177,12 @@ body {
 
 
 @media all and (max-width: 700px) {
+
+
+    
     .hero {
-        display: block;
+        display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
 
@@ -258,7 +270,7 @@ body {
 
     .grid__item--4-1 {
         color: #808080;
-        margin-right: 50%;
+        margin-right: 46%;
         margin-top: 25%;
     }
 

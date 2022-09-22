@@ -1,6 +1,5 @@
 const DATA = {
-    main_card: [
-        {
+    main_card: {
         words_before: 'Report for',
         name: 'Jeremy Robson',
         main_svg: '/IMAGES/image-jeremy.png',
@@ -8,10 +7,10 @@ const DATA = {
         time_interval: [
             'Daily',
             'Weekly',
-            'Monthly',
-            ]
-        }
-    ],
+            'Monthly'
+        ]
+    }
+    ,
 
     topic_cards: [
         {
@@ -63,31 +62,30 @@ const DATA = {
     ]
 }
 
-const container = document.querySelector('#item-list')
 
+
+const container = document.querySelector('#item-list')
 
 
 const renderCards = () => {
 
-    DATA.main_card.map(el => {
-        const mainCard = `
-        <div class="grid__item--1">
-            <div class="grid__item--2 ${el.color}">
-                <img class="grid__main-png" src="${el.main_svg}">
-                    <div class="grid__item--4">  
-                        <p class="grid__item--4-1">${el.words_before}</p>
-                        <h1 class="grid__item--4-2">${el.name}</h1>
-                    </div>
-                </div>    
-            <div class="grid__item--3">
-                <p class="interval__list>Daily</p>
-                <p class="interval__list>Weekly</p>
-                <p class="interval__list>Monthly</p>
-            </div>
-        </div>`;
-        container.innerHTML += mainCard
-    })
+    
 
+    const mainCard = `
+            <div class="grid__item--1">
+                <div class="grid__item--2 ${DATA.main_card.color}">
+                    <img class="grid__main-png" src="${DATA.main_card.main_svg}">
+                        <div class="grid__item--4">  
+                            <p class="grid__item--4-1">${DATA.main_card.words_before}</p>
+                            <h1 class="grid__item--4-2">${DATA.main_card.name}</h1>
+                        </div>
+                    </div>    
+                <div class="grid__item--3">
+                    <p class="interval__list>${DATA.main_card.time_interval[1]}</p>
+                </div>
+            </div>`;
+
+        container.innerHTML = mainCard;
 
     DATA.topic_cards.map(el => {
         const element = `
@@ -110,4 +108,5 @@ const renderCards = () => {
     })
 
 }
+
 renderCards()
