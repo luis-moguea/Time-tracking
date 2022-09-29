@@ -85,8 +85,19 @@ body {
 }
 
 .interval__list {
-    display: block;
-    color: #ffffff;
+    align-items: center;
+    justify-content: center;
+    color: #808080;
+    list-style: none;
+    margin-left: -30px;
+    margin-top: 5px;
+    line-height: 30px;
+
+}
+
+.interval__list--li:hover {
+    color: #ebe2e2;
+    cursor: pointer;
 }
 
 
@@ -235,8 +246,7 @@ body {
 
     .grid__item--1 {
         width: 240px;
-        margin-left: 8%;
-        
+
     }
 
     .grid__item {
@@ -258,6 +268,16 @@ body {
 
     .grid__item--3 {
         height: 40px;
+    }
+
+    .interval__list {
+        display: flex;
+        justify-content: center;
+    
+    }
+
+    .interval__list--li {
+        margin-left: 20px;
     }
 
     .grid__item--4 {

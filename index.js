@@ -66,10 +66,11 @@ const DATA = {
 
 const container = document.querySelector('#item-list')
 
+const renderParaghraphList = (arrayItems) => {
+    return arrayItems.map(item => `<li class="interval__list--li">${item}<li>`).join('')
+}
 
 const renderCards = () => {
-
-    
 
     const mainCard = `
             <div class="grid__item--1">
@@ -81,7 +82,9 @@ const renderCards = () => {
                         </div>
                     </div>    
                 <div class="grid__item--3">
-                    <p class="interval__list>${DATA.main_card.time_interval[1]}</p>
+                    <ul class="interval__list">
+                        ${renderParaghraphList(DATA.main_card.time_interval)}</p>
+                    <ul>
                 </div>
             </div>`;
 
