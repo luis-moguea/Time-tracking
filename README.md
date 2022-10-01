@@ -12,10 +12,10 @@ View the optimal layout for the site depending on their device's screen size
 See hover states for all interactive elements on the page
 Switch between viewing Daily, Weekly, and Monthly stats
 
-![]()
+![desktop layout](https://raw.githubusercontent.com/luis-moguea/Time-tracking/main/IMAGES/github-readme-images/time-t-img-1.png)
 
 
-![]()
+![mobile layout](https://raw.githubusercontent.com/luis-moguea/Time-tracking/main/IMAGES/github-readme-images/TIME-T-IMG-2.png)
 
 
-![]()
+![mobile layout](https://raw.githubusercontent.com/luis-moguea/Time-tracking/main/IMAGES/github-readme-images/TIME-T-IMG-3.png)
